@@ -2,8 +2,10 @@ import RPi.GPIO as GPIO
 import os
 import time
 
+
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(4,GPIO.IN)
+
 
 for i in range(1000):
     if GPIO.input(4)==True:
@@ -13,6 +15,7 @@ for i in range(1000):
     time.sleep(1)
 
 
+#this is a change hopefully it will show up in git
         
     
 
